@@ -1,0 +1,596 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ----------------
+      Header Line
+   ---------------- */
+.banner {
+  display: flex;
+  width: 100%;
+  margin-bottom: 100px;
+  background-color: #161616;
+}
+.banner-text {
+  color: #ffffff;
+  margin: 5% 5%;
+  width: 60%;
+}
+.banner-text h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin: 0;
+}
+.banner-text p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+.watch-line {
+  border: 1px solid #dd0000;
+  border-radius: 10px;
+  background-color: #dd0000;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding: 16px 25px;
+  margin-top: 30px;
+}
+.banner-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-image .ball {
+  position: relative;
+  width: 20%;
+  left: 20%;
+  bottom: 25%;
+}
+.banner-image .img {
+  width: 60%;
+  justify-content: right;
+}
+.banner:hover .ball {
+  transform: rotate(60deg);
+  transition: transform 1s ease-out 0.2s;
+  transform: translate(-500px, -100px);
+}
+/* ----------------
+      Blog Line
+   ---------------- */
+.container {
+  display: flex;
+}
+.blogs {
+  min-width: 312px;
+  max-height: 312px;
+  background-color: #161616;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.blog button {
+  font-size: 20px;
+  font-weight: 700;
+  width: 252px;
+  height: 64px;
+  border-radius: 10px;
+}
+.blog button a {
+  text-decoration: none;
+  color: #161616;
+}
+.all-group button {
+  font-size: 20px;
+  font-weight: 700;
+  width: 252px;
+  height: 64px;
+  border-radius: 10px;
+}
+.match button {
+  font-size: 20px;
+  font-weight: 700;
+  width: 252px;
+  height: 64px;
+  border-radius: 10px;
+  background-color: #dd0000;
+}
+.match button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* ----------------
+      Flag Artical Line
+   ---------------- */
+
+.blogs-articals {
+  display: flex;
+  margin-bottom: 130px;
+}
+.flag-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+ 
+}
+.flags {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 24px;
+}
+.flags-text {
+  border: 1px solid #e8e8e8;
+}
+.flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+}
+.flag img {
+  width: 100px;
+}
+.flag h1 {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.transfer {
+  border: 1px solid #161616;
+  font-size: 16px;
+  font-weight: 500;
+}
+.flag-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flag-text h1 {
+  margin: 0;
+}
+
+/* ----------------
+      Footer Line
+   ---------------- */
+footer {
+  text-align: center;
+  width: 100%;
+  height: 444px;
+  background-color: #161616;
+  color: #ffffff;
+}
+.goal {
+  font-size: 48px;
+  font-weight: 600;
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+.genarel {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 351px;
+}
+.genarel p {
+  font-size: 12px;
+}
+.genarel a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.social-icon {
+  font-size: 100%;
+}
+.social-icon i {
+  padding: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------                    Mobile Device ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 576px) {
+  /* ----------------
+      Header Line
+   ---------------- */
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-text h1 {
+    font-size: 20px;
+  }
+  .banner-text p {
+    font-size: 10px;
+  }
+  .watch-line {
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    padding: 8px 12px;
+    margin-top: 30px;
+  }
+  .banner-image {
+    margin-left: 10%;
+    margin-top: 10.3%;
+    margin-right: 10%;
+    justify-content: right;
+  }
+  .banner-image .ball {
+    position: relative;
+    width: 30%;
+    left: 20%;
+    bottom: 150px;
+  }
+  .banner:hover .ball {
+    transform: rotate(60deg);
+    transition: transform 3s ease 0.2s;
+    transform: translate(-150px, -30px);
+  }
+
+  /* ----------------
+      Blog Line
+   ---------------- */
+  .blogs-articals {
+    display: flex;
+    flex-direction: column;
+      }
+  .blogs{
+    min-width: 210px;
+    max-height: 176px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+         flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+.blog button{
+    font-size: 20px;
+    font-weight: 700;
+    width: 210px;
+    height: 64px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #FFFFFF
+}
+.blog button a{
+    text-decoration: none;
+    color: #161616;
+}
+.all-group button{
+    font-size: 20px;
+    font-weight: 700;
+    width: 210px;
+    height: 64px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #FFFFFF;
+}
+  .match button{
+    font-size: 20px;
+    font-weight: 700;
+    width: 210px;
+    height: 64px;
+    border-radius: 10px;
+    background-color: #DD0000;
+    border: 1px solid #DD0000;
+    margin-bottom: 10px;
+}
+.match button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+  .flag-layout {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .flags {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 24px;
+  }
+  .flags-text {
+    border: 1px solid #e8e8e8;
+  }
+  .flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+  }
+  .flag img {
+    width: 50px;
+  }
+  .flag h1 {
+    padding: 0 15px;
+    margin-bottom: 10px;
+  }
+
+
+  /* ----------------
+      Blog Artical Line
+   ---------------- */
+
+  .blogs-articals {
+    display: flex;
+  }
+
+  
+  /* ----------------
+      Footer Line
+   ---------------- */
+  footer {
+    text-align: none;
+    width: 100%;
+    height: 400px;
+    background-color: #161616;
+    color: #ffffff;
+  }
+  .goal {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .genarel {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+  }
+  .genarel a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------                   Tablet Mobile Device ---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  /* ----------------
+      Header Line
+   ---------------- */
+  .banner {
+    display: flex;
+
+    width: 100%;
+    margin-bottom: 100px;
+    background-color: #161616;
+  }
+
+  .banner-text {
+    color: #ffffff;
+    margin: 5% 5%;
+    width: 35%;
+  }
+  .banner-text h1 {
+    font-size: 40px;
+  }
+  .banner-text p {
+    font-size: 14px;
+  }
+
+  .banner-image {
+    margin-left: 10%;
+    margin-top: 10.3%;
+    margin-right: 10%;
+    justify-content: right;
+  }
+  .banner-image img {
+    width: 100%;
+    justify-content: right;
+  }
+.banner:hover .ball {
+  transform: rotate(60deg);
+  transition: transform 1s ease-out 0.2s;
+  transform: translate(-250px, -100px);
+}
+  /* ----------------
+      Blog Line
+   ---------------- */
+  .blogs-articals {
+    display: flex;
+    flex-direction: column;
+  }
+  .blogs{
+    min-width: 312px;
+   height: 150px;
+   background-color: #FFFFFF;
+   border-radius: 10px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+.blog button{
+   font-size: 20px;
+   font-weight: 700;
+   width: 230px
+   height: 64px;
+   border-radius: 10px;
+   border: 1px solid #E8E8E8;
+   margin-right: 10px;
+}
+.blog button a{
+   text-decoration: none;
+   color: #161616;
+}
+.all-group button{
+   font-size: 20px;
+   font-weight: 700;
+   width: 230px;
+   height: 64px;
+   border-radius: 10px;
+   border: 1px solid #E8E8E8;
+   margin-right: 10px;
+}
+ .match button{
+   font-size: 20px;
+   font-weight: 700;
+   width: 230px;
+   height: 64px;
+   border-radius: 10px;
+   background-color: #DD0000;
+   border: 1px solid #DD0000;
+   margin-right: 0px;
+}
+   .match button a{
+       text-decoration: none;
+       color: #FFFFFF;
+    } 
+
+  .flag-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    counter-reset: 30px;
+  }
+  .flags {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 24px;
+    margin-top: 24px;
+  }
+  .flags-text {
+    border: 1px solid #e8e8e8;
+  }
+  .flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+  }
+  .flag img {
+    width: 50px;
+  }
+  .flag h1 {
+    padding: 0 20px;
+    margin-bottom: 10px;
+  }
+
+  /* ----------------
+      Blog Artical Line
+   ---------------- */
+
+  .articals-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  /* .articals{
+       margin-left:0 ;
+             
+   }
+   .artical{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start ;
+      margin: 0 20px;
+          
+   }
+   .artical img{
+       width: 100%;
+       margin-bottom: 20px;
+   }
+   .artical button{
+       display: inline-block;
+       width: 100px;
+       height: 32px;
+       border-radius: 5px;
+   }
+   .transfer{
+       border: 1px solid #161616;
+       font-size: 16px;
+       font-weight: 500;
+       
+   }
+   .artical h2{
+       font-size: 18px;
+       font-weight: 600;
+       margin-bottom: 0;
+   }
+   .time-comments{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-bottom: 5%;
+         }
+    .time-comments i{
+        margin-right: 10px;
+        margin-top: 0;
+    }
+    .time-comments p{
+        margin-right: 30px;
+        
+    } */
+  /* ----------------
+      View All
+   ---------------- */
+  .view-all {
+    display: none;
+  }
+  .view-port {
+    display: block;
+  }
+  .view-port button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .view-port a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .view-button {
+    border: 1px solid #dd0000;
+    border-radius: 10px;
+    background-color: #dd0000;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 16px 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50%;
+  }
+
+  /* ----------------
+      Footer Line
+   ---------------- */
+  footer {
+    text-align: center;
+    width: 100%;
+    height: 345px;
+    background-color: #161616;
+    color: #ffffff;
+  }
+  .goal {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+  .genarel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 0 103px;
+    font-size: 9px;
+  }
+
+  .genarel a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
